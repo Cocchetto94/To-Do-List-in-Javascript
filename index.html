@@ -1,0 +1,53 @@
+<!--
+    Il file della demo settimanale è una ToDoList responsive costruita mediante Bootstrap.
+    L'uso del framework non è mandatorio ma solo indicativo per la costruzione di un layout.
+    Layout che può essere ocstituito anche custom, purchè coerente con la richiesta.
+    L?importante è capire come far interagire layout e js.
+    Come Js può modellare DOM, caricare dati etc...
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS e Bundle JS Bootstrap 4 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/index.js"></script>
+    <style>
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+    <title>WEEK Project - Week 3</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand container-fluid" href="#">ToDOList</a>
+    </nav>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group mb-3">
+                    <input type="text" id="task_txt" class="form-control" placeholder="Aggiungi un task ..."
+                        aria-label="Aggiungi un task ..." aria-describedby="add_btn">
+                    <button class="btn btn-outline-secondary" type="button" id="add_btn">Aggiungi</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul id="tasks_list_html" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
